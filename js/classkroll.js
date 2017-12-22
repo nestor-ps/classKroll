@@ -1,62 +1,92 @@
-function classKroll(){
-    var _this=this;
-    this.elements=[];
-    this.init  = function(){
-        var elements=document.querySelectorAll('[data-kroll]');
-        var finalElements = [];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bars{
+            border: 1px solid red;
+            padding: 50px;
+            transition: all 1s;
+            width: 50%;
+            background-color: green;
+        }
+        .bars.rotate{
+            border: 1px solid green;
+            width: 80%;
+            margin-left: 120px;
+            color: #fff;
+            background-color: red;
+        }
+        .blue{
+            width: 2rem;
+            height: 2rem;
+            margin: .5rem;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
 
-        [].forEach.call(elements, function(el, i) {
-            finalElements.push({
-                node: el
-            });
-        });
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<div data-kroll="rotate" data-kroll-position="top" class="bars">Bar content</div>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<div style="position: relative;display:flex;">
+    <div data-kroll="rotate" class="bars" data-kroll-position="center" >Bar content</div>
+</div>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<div data-kroll="fn_shoot" data-kroll-position="center" class="blue">Bar content</div>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<div data-kroll="rotate" class="bars" data-kroll-position="bottom" >Bar content</div>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p><p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
+<p>fksjdflksjad fljsadfl jlsfj kfl jklfjl jfklj lkslfjkls</p>
 
-        this.elements=finalElements;
-        window.addEventListener('scroll', function(){
-            _this.handleScroll(_this.elements);
-        });
+
+<script src="js/classkroll.js"></script>
+<script>
+    classKroll();
+
+    function fn_shoot(){
+        //do whatever, call another lib etc...
     }
+</script>
 
-    this.handleScroll = function ($elements) {
-        const scrollTop = window.pageYOffset;
-        const windowHeight = window.innerHeight;
-        /**
-         * Check all registered elements positions
-         * and animate them on scroll
-         */
-        _this.elements.forEach(function(el, i){
-                _this.setState(el, windowHeight + scrollTop);
-            }
-        );
-    };
-    this.setState = function (el, top) {
-        console.log("top:"+top);
-        if (top > this.appearingElementAt(el)) {
-            el.node.classList.add(el.node.getAttribute('data-kroll'));
-        }
-        else{
-            el.node.classList.remove(el.node.getAttribute('data-kroll'));
-        }
-    };
-    this.appearingElementAt = function(el){
-        var elementTop=el.node.getBoundingClientRect().top + window.scrollY;
-        var position= el.node.getAttribute('data-kroll-position');
-        var element_offset;
-        switch (position){
-            case 'center':
-                element_offset=window.innerHeight / 2;
-                break;
-            case 'top':
-                element_offset=window.innerHeight;
-                break;
-            case 'bottom':
-                element_offset= (el.node.offsetHeight);
-                console.log(element_offset);
-                break;
-
-        }
-        return elementTop + element_offset;
-    }
-    this.init();
-}
-classKroll();
+</body>
+</html>
