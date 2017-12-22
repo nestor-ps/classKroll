@@ -1,7 +1,7 @@
 # classKroll
 
 ### Main features
-Simple and lightweight js file to add custom classes while scrolling.
+Simple and lightweight js file to add custom classes to DOM elements when they appear in the viewport while scrolling. Perfect for transition classes and effects.
 
 ```html 
 <div data-kroll="rotate" class="bars" data-kroll-position="center" >Bar content</div> 
