@@ -47,7 +47,7 @@ function classKroll(){
             }
             else {
 
-                if(class_or_func.indexOf("anime(")>=0){
+                if(class_or_func.indexOf("fn_")>=0){
 
                 }else {
                     console.log(class_or_func+"-"+el.node.getAttribute('data-kroll'));
